@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Arianna Sanders - Computer Science & Engineering student at Ohio State University. IT & Software Development Intern." />
   <title>Arianna Sanders | Portfolio</title>
-  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TXPGG3GD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6TXPGG3GD3');
+  </script>
+
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/glightbox.min.css" />
@@ -148,6 +157,17 @@
                   <li>Gained hands-on exposure to professional IT environments, including troubleshooting, documentation, and system organization.</li>
                   <li>Collaborated with mentors to understand real-world problem-solving and contribute to ongoing team initiatives.</li>
                 </ul>
+                <div class="timeline-gallery">
+                  <a href="img/Media.jpg" class="glightbox" data-gallery="berpl-gallery" data-glightbox="title: Welcome to BERPL; description: Screen welcoming the new INTERalliance summer interns at BERPL Technologies.">
+                    <img src="img/Media.jpg" alt="BERPL Tech Welcome Screen" />
+                  </a>
+                  <a href="img/Media (1).jpg" class="glightbox" data-gallery="berpl-gallery" data-glightbox="title: BERPL Internship Team; description: Working alongside mentors and fellow interns at BERPL Technologies.">
+                    <img src="img/Media (1).jpg" alt="BERPL Internship Team Group Photo" />
+                  </a>
+                  <a href="img/intern_summit_photo1.jpg" class="glightbox" data-gallery="berpl-gallery" data-glightbox="title: INTERalliance Intern Summit; description: Networking with peers and industry mentors at the INTERalliance Intern Summit.">
+                    <img src="img/intern_summit_photo1.jpg" alt="INTERalliance Intern Summit" />
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -271,6 +291,14 @@
                   <li>Placed third in a Capture-the-Flag cybersecurity competition at TechOlympics, earning a monitor as a prize.</li>
                   <li>Collaborated on tech-driven projects and received the Networking Award for outstanding communication skills.</li>
                 </ul>
+                <div class="timeline-gallery">
+                  <a href="img/TechO_photo1.jpg" class="glightbox" data-gallery="techo-gallery" data-glightbox="title: TechOlympics Envision Team; description: Lakota East high school team at the TechOlympics competition.">
+                    <img src="img/TechO_photo1.jpg" alt="Lakota East Interalliance TechOlympics Group" />
+                  </a>
+                  <a href="img/TechO_photo2.jpg" class="glightbox" data-gallery="techo-gallery" data-glightbox="title: Capture-the-Flag Prize; description: Receiving the 3rd place prize monitor at TechOlympics.">
+                    <img src="img/TechO_photo2.jpg" alt="Capture the Flag 3rd Place Sceptre Monitor Prize" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -287,94 +315,89 @@
     <div class="container">
       <h2 class="section-title">Projects</h2>
       
-      <div class="projects-grid">
-        
-        <!-- Flagship Project: NWSL Player Dashboard -->
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <img src="img/Screenshot 2026-07-07 150815.png" alt="NWSL Player Performance Dashboard screenshot" class="project-img" />
-            <a href="img/Screenshot 2026-07-07 150815.png" class="project-overlay glightbox" data-gallery="nwsl-gallery">
-              <div class="project-overlay-btn">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-              </div>
+      <!-- Featured Project 1: NWSL Player Dashboard -->
+      <div class="featured-project">
+        <div class="featured-media">
+          <video 
+            src="img/Screen Recording 2026-07-13 132815.mp4" 
+            class="featured-video"
+            controls
+            muted
+            preload="metadata"
+            poster="img/Screenshot 2026-07-07 150815.png"
+          ></video>
+          <div class="featured-media-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Watch Demo
+          </div>
+        </div>
+        <div class="featured-details">
+          <span class="mono" style="margin-bottom: 0.75rem; display: inline-block;">Featured Project</span>
+          <h3 class="featured-title">NWSL Player Contribution Dashboard</h3>
+          <div class="featured-desc-card">
+            <p>
+              Inspired by the 2026 World Cup, I built this interactive dashboard to analyze NWSL player performances using a custom weighted contribution score. Features multiple leaderboards, a player search interface, and player-to-player comparison charts with interactive Altair visualizations.
+            </p>
+          </div>
+          <div class="project-tags" style="margin-top: 1.25rem;">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">SQLite</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Streamlit</span>
+            <span class="project-tag">Altair</span>
+          </div>
+          <div class="project-links" style="margin-top: 1.5rem;">
+            <a href="https://nwsl-player-contribution-dashboard.streamlit.app/" class="project-link" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Dashboard
             </a>
-            <!-- Hidden links for glightbox gallery to load the rest of the screenshots -->
-            <div style="display: none;">
-              <a href="img/Screenshot 2026-07-07 150850.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 150858.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 150906.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 150912.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 150918.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 150926.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 150933.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-              <a href="img/Screenshot 2026-07-07 112836.png" class="glightbox" data-gallery="nwsl-gallery"></a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">SQLite</span>
-              <span class="project-tag">Pandas</span>
-              <span class="project-tag">Streamlit</span>
-              <span class="project-tag">Altair</span>
-            </div>
-            <h3 class="project-title">NWSL Player Contribution Dashboard</h3>
-            <p class="project-desc">
-              Inspired by the 2026 World Cup, I built this interactive dashboard to analyze NWSL player performances using a custom weighted contribution score. Features multiple leaderboards, a player search interface, and player comparison charts.
-            </p>
-            <div class="project-links">
-              <a href="https://nwsl-player-contribution-dashboard.streamlit.app/" class="project-link" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live Dashboard
-              </a>
-              <a href="https://github.com/arsanders13/NWSL-Player-Contribution-Dashboard" class="project-link" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                GitHub Code
-              </a>
-            </div>
+            <a href="https://github.com/arsanders13/NWSL-Player-Contribution-Dashboard" class="project-link" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              GitHub Code
+            </a>
           </div>
         </div>
-
-        <!-- Project 2: Holiday Auto Theater Website -->
-        <div class="project-card">
-          <div class="project-img-wrapper" style="background: linear-gradient(135deg, var(--pastel-pink-light) 0%, var(--pastel-green-light) 100%); display: flex; align-items: center; justify-content: center;">
-            <!-- Cinema / Movie Vector SVG Illustration -->
-            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--pastel-pink-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
-              <line x1="7" y1="2" x2="7" y2="22"/>
-              <line x1="17" y1="2" x2="17" y2="22"/>
-              <line x1="2" y1="12" x2="22" y2="12"/>
-              <line x1="2" y1="7" x2="7" y2="7"/>
-              <line x1="2" y1="17" x2="7" y2="17"/>
-              <line x1="17" y1="17" x2="22" y2="17"/>
-              <line x1="17" y1="7" x2="22" y2="7"/>
-            </svg>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="project-tag">HTML5</span>
-              <span class="project-tag">CSS3</span>
-              <span class="project-tag">JavaScript</span>
-            </div>
-            <h3 class="project-title">Holiday Auto Theater Website</h3>
-            <p class="project-desc">
-              A fully responsive rebuild of the historic Drive-In Theater website. Features film grid listings, showtimes selection, and a custom ticketing page. Represents a major milestone and evolution in my frontend programming journey.
-            </p>
-            <div class="project-links">
-              <a href="https://arsanders13.github.io/Holiday-Auto-Theater/" class="project-link" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live Website
-              </a>
-              <a href="https://github.com/arsanders13/Holiday-Auto-Theater" class="project-link" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                GitHub Code
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Featured Project 2: Holiday Auto Theater Website -->
+      <div class="featured-project reverse">
+        <div class="featured-media">
+          <a href="https://arsanders13.github.io/Holiday-Auto-Theater/" target="_blank" class="featured-img-link">
+            <img src="img/Screenshot 2026-07-13 133027.png" alt="Holiday Auto Theater Website" class="featured-screenshot" />
+            <div class="featured-media-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Visit Live Site
+            </div>
+          </a>
+        </div>
+        <div class="featured-details">
+          <span class="mono" style="margin-bottom: 0.75rem; display: inline-block;">Featured Project</span>
+          <h3 class="featured-title">Holiday Auto Theater Website</h3>
+          <div class="featured-desc-card">
+            <p>
+              A fully responsive rebuild of the historic Holiday Auto Drive-In Theater website. Features a retro neon-lit header and billboard design, dynamic movie schedule grid, interactive tabbed navigation for showtimes, snack bar menus, directions, and a gallery. Represents a major milestone in my frontend programming journey.
+            </p>
+          </div>
+          <div class="project-tags" style="margin-top: 1.25rem;">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Responsive Design</span>
+          </div>
+          <div class="project-links" style="margin-top: 1.5rem;">
+            <a href="https://arsanders13.github.io/Holiday-Auto-Theater/" class="project-link" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Website
+            </a>
+            <a href="https://github.com/arsanders13/Holiday-Auto-Theater" class="project-link" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              GitHub Code
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -419,18 +442,34 @@
         <!-- Certifications Column -->
         <div>
           <h2 class="section-title" style="margin-bottom: 2rem;">Certifications</h2>
-          <div class="cert-card">
-            <div class="cert-badge">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
+          <div class="certs-container">
+            <div class="cert-card">
+              <div class="cert-badge">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="cert-title">Databases and SQL for Data Science with Python</h3>
+              <div class="cert-org">Professional Certification</div>
+              <div class="cert-date" style="margin-bottom: 1.5rem;">Issued Summer 2026</div>
+              <a href="img/Coursera Databases and SQL for Data Science with Python.pdf" class="btn btn-secondary btn-sm" target="_blank" style="padding: 0.45rem 1.25rem; font-size: 0.85rem; border-radius: 20px;">
+                View Certificate PDF
+              </a>
             </div>
-            <h3 class="cert-title">Databases and SQL for Data Science with Python</h3>
-            <div class="cert-org">Professional Certification</div>
-            <div class="cert-date" style="margin-bottom: 1.5rem;">Issued Summer 2026</div>
-            <a href="img/Coursera Databases and SQL for Data Science with Python.pdf" class="btn btn-secondary btn-sm" target="_blank" style="padding: 0.45rem 1.25rem; font-size: 0.85rem; border-radius: 20px;">
-              View Certificate PDF
-            </a>
+
+            <div class="cert-card">
+              <div class="cert-badge" style="background-color: var(--pastel-pink-light); color: var(--pastel-pink-dark);">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="cert-title">Introduction to Artificial Intelligence</h3>
+              <div class="cert-org">Professional Certification</div>
+              <div class="cert-date" style="margin-bottom: 1.5rem;">Issued Summer 2026</div>
+              <a href="img/Coursera Introduction to AI.pdf" class="btn btn-secondary btn-sm" target="_blank" style="padding: 0.45rem 1.25rem; font-size: 0.85rem; border-radius: 20px; border-color: var(--pastel-pink); color: var(--pastel-pink-dark);">
+                View Certificate PDF
+              </a>
+            </div>
           </div>
         </div>
 
